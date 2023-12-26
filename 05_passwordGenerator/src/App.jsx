@@ -1,10 +1,11 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 
 function App() {
-  const [length, setLength] = useState()
-  const [numberAllowed, setNumber] = useState(false)
-  const [charAllowed, setcharacter] = useState(false)
-  const [password, setPassword] = useState("")
+  
+  const [password, setPassword] = useState('')
+  const [number, setNumber] = useState(false)
+  const [length, setLength] = useState(6)
+  const [character, setCharacter] = useState(false)
 
   const passwordGenerator = useCallback(() => {
     let pass = ""
@@ -52,15 +53,13 @@ function App() {
           type='range'
           min={6}
           max={100}
-          value={length}
-          className='cursor-pointer'
           onChange={(e) => {setLength(e.target.value)}}
           >
           </input>
             <label>Length: {length}</label>
         </div>
-        <div className="flex items-center gap-x-1">
-      <input
+      <div>
+        <input
             type="checkbox"
             defaultChecked={numberAllowed}
             id="numberInput"
