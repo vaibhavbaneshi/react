@@ -18,7 +18,7 @@ function App() {
         <button className="px-5 bg-yellow-500 hover:bg-yellow-700 hover:text-black rounded-full" onClick={() => setColor('yellow')}>Yellow</button>
         <button className="px-5 bg-purple-500 hover:bg-purple-700  hover:text-black rounded-full" onClick={() => setColor('purple')}>Purple</button>
         <button className="px-5 bg-white hover:bg-gray-200 text-black rounded-full" onClick={() => setColor('white')}>White</button>
-        <button className="px-5 rounded-full hover:bg-gray-700" onClick={() => setColor('black')}>Black</button>
+        <button className="bg-black text-white px-5 rounded-full hover:bg-gray-800" onClick={() => setColor('black')}>Black</button>
       </div>
       </div>
     </>
