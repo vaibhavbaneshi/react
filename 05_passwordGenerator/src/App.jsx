@@ -1,11 +1,10 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 
 function App() {
-  
-  const [password, setPassword] = useState('')
-  const [number, setNumber] = useState(false)
-  const [length, setLength] = useState(6)
-  const [character, setCharacter] = useState(false)
+  const [length, setLength] = useState()
+  const [numberAllowed, setNumber] = useState(false)
+  const [charAllowed, setcharacter] = useState(false)
+  const [password, setPassword] = useState("")
 
   const passwordGenerator = useCallback(() => {
     let pass = ""
